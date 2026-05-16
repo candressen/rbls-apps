@@ -47,12 +47,9 @@ export default function Home() {
             Why We Exist
           </h2>
           {[
-            "Creators already did the hard part. They built the audience. They earned attention, trust, and loyalty from real people who come back again and again.",
-            "An app is the natural next step. It gives creators a place that is truly theirs — where their community can go deeper than a feed, a post, or a link in bio.",
             "Views are power now. Attention is the new currency, and niche audiences matter more than ever because they are real, focused, and ready to move. You do not need millions of followers to matter. A strong audience that truly cares can build something lasting.",
-            "The old gatekeepers are losing their grip. Distribution used to belong to big companies, big budgets, and closed doors. Now it belongs to the people who know how to gather attention and keep it. Creators are no longer waiting to be picked.",
             "RBLS is here to support that future. We are not a platform trying to own your business. We are not a vendor looking to charge big fees and disappear. We are partners. We help creators turn their audience into real products — while keeping ownership where it belongs.",
-            "The future of apps will not be built only by corporations in boardrooms. It will be built by the people who already have communities, culture, and trust. It will be built by creators. And we want to help make that happen.",
+            "The future of apps will not be built only by corporations in boardrooms. It will be built by the people who already have communities, culture, and trust. It will be built by creators.",
           ].map((p, i) => (
             <p 
               key={i}
@@ -62,6 +59,17 @@ export default function Home() {
               {p}
             </p>
           ))}
+          <p
+            style={{
+              color: '#E8FF47',
+              fontSize: 'clamp(24px, 3vw, 36px)',
+              fontWeight: 'bold',
+              fontFamily: 'Space Grotesk, sans-serif',
+              marginTop: '24px',
+            }}
+          >
+            It will be built by Rebels.
+          </p>
         </div>
       </section>
 
@@ -99,6 +107,55 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="py-24 px-6" style={{background: '#111111'}}>
+        <div className="max-w-[600px] mx-auto text-center">
+          <h2
+            className="font-bold mb-4"
+            style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 3vw, 36px)'}}
+          >
+            Work With Us
+          </h2>
+          <p
+            className="text-white/60 text-lg mb-12"
+            style={{fontFamily: 'Inter, sans-serif'}}
+          >
+            Have an idea? We want to hear it.
+          </p>
+          <form
+            action="mailto:rblssoftware@gmail.com"
+            method="POST"
+            encType="text/plain"
+            className="flex flex-col gap-4 text-left"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              className="bg-[#1a1a1a] border border-[#333] rounded-xl px-5 py-4 text-white placeholder-white/30 outline-none w-full text-base"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              className="bg-[#1a1a1a] border border-[#333] rounded-xl px-5 py-4 text-white placeholder-white/30 outline-none w-full text-base"
+            />
+            <textarea
+              name="message"
+              placeholder="Tell us about your idea"
+              rows={5}
+              className="bg-[#1a1a1a] border border-[#333] rounded-xl px-5 py-4 text-white placeholder-white/30 outline-none w-full text-base resize-none"
+            />
+            <button
+              type="submit"
+              className="bg-[#E8FF47] text-black font-bold rounded-xl px-8 py-4 w-full text-base hover:opacity-90 transition cursor-pointer border-none"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </section>
 
