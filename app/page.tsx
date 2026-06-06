@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'RBLS Apps — The Future is Apps by Creators',
@@ -125,37 +126,7 @@ export default function Home() {
           >
             Have an idea? We want to hear it.
           </p>
-          <form
-            action="mailto:rblssoftware@gmail.com"
-            method="POST"
-            encType="text/plain"
-            className="flex flex-col gap-4 text-left"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              className="bg-[#1a1a1a] border border-[#333] rounded-xl px-5 py-4 text-white placeholder-white/30 outline-none w-full text-base"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your email"
-              className="bg-[#1a1a1a] border border-[#333] rounded-xl px-5 py-4 text-white placeholder-white/30 outline-none w-full text-base"
-            />
-            <textarea
-              name="message"
-              placeholder="Tell us about your idea"
-              rows={5}
-              className="bg-[#1a1a1a] border border-[#333] rounded-xl px-5 py-4 text-white placeholder-white/30 outline-none w-full text-base resize-none"
-            />
-            <button
-              type="submit"
-              className="bg-[#E8FF47] text-black font-bold rounded-xl px-8 py-4 w-full text-base hover:opacity-90 transition cursor-pointer border-none"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
