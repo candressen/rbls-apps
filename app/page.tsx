@@ -81,7 +81,7 @@ export default function Home() {
             className="font-bold mb-4 text-center"
             style={{fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 44px)'}}
           >
-            Things That Change the Temperature
+            From Influence to Ownership
           </h2>
           <p className="text-white/60 text-center mb-20 max-w-[600px] mx-auto" style={{fontFamily: 'Inter, sans-serif', fontSize: '18px'}}>
             We build experiences that open doors, shift perspective, and turn instinct into movement. Work that feels immediate, cultural, and just a little ahead of where the world is standing.
